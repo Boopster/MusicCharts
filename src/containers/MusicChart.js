@@ -14,7 +14,7 @@ class MusicChart extends Component {
     fetch(url)
     .then(res => res.json())
     .then(songsData => this.setState({
-      songsList: songsData
+      songsList: songsData.feed
     }))
     .catch(err => console.error());
   }
