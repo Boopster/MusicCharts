@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SongsList from '../components/SongsList'
+import SongsList from '../components/SongsList';
+import './MusicChart.css';
 
 class MusicChart extends Component {
   constructor(props){
@@ -21,9 +22,11 @@ class MusicChart extends Component {
 
   render() {
     return(
-      <div>
+      <div className="main-container">
+      <div className="container">
         <h1>iTunes Store: Top Songs</h1>
         <SongsList songsList={this.state.songsList}/>
+      </div>
       </div>
     )
   }
