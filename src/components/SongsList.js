@@ -7,7 +7,7 @@ const SongsList = (props) => {
     return (
         <div className="main-container">
         <img src={url} alt="" height="80" width="80"></img>
-      <div className="container" value={index} key={index}>
+      <div className="container">
         <h3>Chart Position: {index+1}</h3>
         <h5><a href={song.link[0].attributes.href}>{song.title.label}</a></h5>
       </div>
